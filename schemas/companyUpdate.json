@@ -1,0 +1,56 @@
+{
+  "default": {},
+  "description": "The root schema comprises the entire JSON document.",
+  "examples": [
+      {
+          "logo_url": "http://a.co/eobPtX2",
+          "name": "Matthew",
+          "description": "english",
+          "num_employees": 100
+      }
+  ],
+  "title": "The root schema",
+  "properties": {
+      "logo_url": {
+          "$id": "#/properties/logo_url",
+          "type": "string",
+          "title": "The logo_url schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "http://a.co/eobPtX2"
+          ]
+      },
+      "name": {
+          "$id": "#/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Matthew"
+          ]
+      },
+      "description": {
+          "$id": "#/properties/description",
+          "type": "string",
+          "title": "The description schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "english"
+          ]
+      },
+      "num_employees": {
+          "$id": "#/properties/num_employees",
+          "type": "integer",
+          "title": "The num_employees schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+              100
+          ]
+      }
+  },
+  "additionalProperties": true
+}

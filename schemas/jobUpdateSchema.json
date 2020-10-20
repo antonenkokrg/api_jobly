@@ -1,0 +1,49 @@
+{
+  "default": {},
+  "description": "The root schema comprises the entire JSON document.",
+  "examples": [
+    {
+      "title": "engineer",
+      "salary": 100000.0,
+      "company_handle": "apple",
+      "equity": 0.1
+    }
+  ],
+  "title": "The root schema",
+  "properties": {
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The title schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["engineer"]
+    },
+    "salary": {
+      "$id": "#/properties/salary",
+      "type": "number",
+      "title": "The salary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0.0,
+      "examples": [100000.0]
+    },
+    "company_handle": {
+      "$id": "#/properties/company_handle",
+      "type": "string",
+      "title": "The company_handle schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["apple"]
+    },
+    "equity": {
+      "default": 0.0,
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [0.1],
+      "maximum": 1.0,
+      "minimum": 0,
+      "title": "The equity schema",
+      "type": "number"
+    }
+  },
+  "additionalProperties": true
+}

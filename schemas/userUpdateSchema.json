@@ -1,0 +1,57 @@
+{
+  "default": {},
+  "description": "The root schema comprises the entire JSON document.",
+  "examples": [
+    {
+      "username": "developer",
+      "password": "apple",
+      "first_name": "HIO",
+      "last_name": "bye",
+      "email": "hel@gmail.com"
+    }
+  ],
+  "title": "The root schema",
+  "properties": {
+    "username": {
+      "$id": "#/properties/username",
+      "type": "string",
+      "title": "The username schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["developer"]
+    },
+    "password": {
+      "$id": "#/properties/password",
+      "type": "string",
+      "title": "The password schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["apple"]
+    },
+    "first_name": {
+      "$id": "#/properties/first_name",
+      "type": "string",
+      "title": "The first_name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["HIO"]
+    },
+    "last_name": {
+      "$id": "#/properties/last_name",
+      "type": "string",
+      "title": "The last_name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["bye"]
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The email schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": ["hel@gmail.com"]
+    }
+  },
+  "additionalProperties": true
+}
